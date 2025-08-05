@@ -100,7 +100,7 @@ function App() {
   }, [parkingSpaces, users, payments, loading, addPayment]);
 
   const navigationItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: TrendingUp },
+    { id: 'dashboard', label: 'Panel Główny', icon: TrendingUp },
     { id: 'spaces', label: 'Miejsca Parkingowe', icon: MapPin },
     { id: 'users', label: 'Użytkownicy', icon: UsersIcon },
     { id: 'payments', label: 'Płatności', icon: DollarSign },

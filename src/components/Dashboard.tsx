@@ -82,7 +82,7 @@ const Dashboard: React.FC<DashboardProps> = ({ parkingSpaces, users, payments })
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Panel Główny </h1>
           <p className="text-gray-600">Przegląd systemu zarządzania parkingiem</p>
         </div>
         <div className="text-sm text-gray-500">
