@@ -1,30 +1,8 @@
 import React, { useState } from 'react';
 import { FileText, Download, FileSpreadsheet, FileImage, MapPin, DollarSign, AlertTriangle, Users } from 'lucide-react';
+import { ParkingSpace, User, Payment } from '../types'; 
 
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  phone?: string;
-}
 
-interface ParkingSpace {
-  id: string;
-  number: string;
-  type: string;
-  is_occupied: boolean;
-  user_id?: string;
-}
-
-interface Payment {
-  id: string;
-  user_id?: string;
-  space_id?: string;
-  amount: number;
-  date: string;
-  status: string;
-  description?: string;
-}
 
 interface ReportsProps {
   parkingSpaces: ParkingSpace[];

@@ -71,7 +71,7 @@ const Payments: React.FC<PaymentsProps> = ({
     const user = users.find(u => u.id === payment.userId);
     const userName = user ? user.name.toLowerCase() : '';
     const matchesSearch = userName.includes(searchTerm.toLowerCase()) || 
-                         payment.description.toLowerCase().includes(searchTerm.toLowerCase());
+                         payment.description?.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesStatus = filterStatus === 'all' || payment.status === filterStatus;
     
     // Filtrowanie po dacie
